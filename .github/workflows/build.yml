@@ -63,13 +63,13 @@ jobs:
       run: |
         git clone https://github.com/adafruit/Adafruit_CircuitPython_FeatherWing.git
         cd Adafruit_CircuitPython_FeatherWing
-        circuitpython-build-bundles --filename_prefix test-single --library_location .
+        samourai-build-bundles --filename_prefix test-single --library_location .
     - name: Test building bundle
       run: |
         # Use the community bundle because it's smaller and faster
         git clone --recurse-submodules https://github.com/adafruit/CircuitPython_Community_Bundle.git
         cd CircuitPython_Community_Bundle
-        circuitpython-build-bundles --filename_prefix test-bundle --library_location libraries --library_depth 2        
+        samourai-build-bundles --filename_prefix test-bundle --library_location libraries --library_depth 2        
     - name: Build Python package
       run: |
         pip install --upgrade setuptools wheel twine readme_renderer testresources
