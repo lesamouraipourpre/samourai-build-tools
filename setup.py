@@ -9,13 +9,13 @@ setup(name='samourai-build-tools',
       author='Scott Shawcroft',
       author_email='scott@adafruit.com',
       url='https://www.adafruit.com/',
-      packages=['circuitpython_build_tools',
-                'circuitpython_build_tools.scripts'],
+      packages=['samourai_build_tools',
+                'samourai_build_tools.scripts'],
       zip_safe=False,
       python_requires='>=3.7',
       install_requires=['Click', 'requests', 'semver'],
       entry_points='''
         [console_scripts]
-        circuitpython-build-bundles=circuitpython_build_tools.scripts.build_bundles:build_bundles
+        circuitpython-build-bundles=samourai_build_tools.scripts.build_bundles:build_bundles
       '''
       )
