@@ -2,7 +2,7 @@
 
 from setuptools import setup
 
-setup(name='circuitpython-build-tools',
+setup(name='samourai-build-tools',
       use_scm_version=True,
       setup_requires=["setuptools_scm"],
       description='CircuitPython library build tools',
