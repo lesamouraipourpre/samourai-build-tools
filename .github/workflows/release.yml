@@ -9,8 +9,7 @@ on:
     branches:
       - main
       - master
-    tags:
-      *.*
+    tags: *
 #  release:
 #    types: [published]
 
