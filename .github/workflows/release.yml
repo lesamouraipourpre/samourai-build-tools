@@ -5,7 +5,13 @@
 name: Release Actions
 
 on:
-  release:
+  push:
+    branches:
+      - main
+      - master
+    tags:
+      *.*
+#  release:
 #    types: [published]
 
 jobs:
