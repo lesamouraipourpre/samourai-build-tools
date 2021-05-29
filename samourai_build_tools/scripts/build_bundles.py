@@ -34,8 +34,8 @@ import zipfile
 
 import click
 
-from circuitpython_build_tools import build
-from circuitpython_build_tools import target_versions
+from samourai_build_tools import build
+from samourai_build_tools import target_versions
 
 import pkg_resources
 
