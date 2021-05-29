@@ -5,13 +5,8 @@
 name: Release Actions
 
 on:
-  push:
-    branches:
-      - main
-      - master
-    tags: '*.*'
-#  release:
-#    types: [published]
+  release:
+    types: [published]
 
 jobs:
   upload-pypi:
