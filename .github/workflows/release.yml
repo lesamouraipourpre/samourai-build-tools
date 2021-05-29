@@ -6,7 +6,7 @@ name: Release Actions
 
 on:
   release:
-    types: [published]
+#    types: [published]
 
 jobs:
   upload-pypi:
